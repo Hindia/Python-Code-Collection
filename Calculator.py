@@ -18,9 +18,8 @@ while True:
 		var1=int(input("Give the first number:"))
 		var2=int(input("Give the second number:"))
 	elif choice==6:
-		print("Thank you!")
+		print("Thank you!!")
 		time.sleep(1)
 		break
 	else:
 		print("Selection was not correct.")
-		
