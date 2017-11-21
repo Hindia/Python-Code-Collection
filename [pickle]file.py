@@ -31,7 +31,7 @@ while True:
 			new=new+":::"+time.strftime("%X %x")
 			content.insert(ch,new)
 		else:
-		    print("Incorrect selection")
+		    print("Incorrect selection.")
 		continue
 	elif choice==4:
 		print("The list has",len(content),"notes.")
