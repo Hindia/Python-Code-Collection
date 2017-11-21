@@ -15,12 +15,10 @@ while True:
 	if choice==1:
 		for i in content:
 			print(i)
-		continue
 	elif choice==2:
 		txt=input("Write a new note:")
 		txt=txt+":::"+time.strftime("%X %x")
 		content.append(txt)
-		continue
 	elif choice==3:
 		print("The list has",len(content),"notes.")
 		ch=int(input("Which of them will be changed?:"))
@@ -32,7 +30,6 @@ while True:
 			content.insert(ch,new)
 		else:
 		    print("Incorrect selection.")
-		continue
 	elif choice==4:
 		print("The list has",len(content),"notes.")
 		dlt=int(input("Which of them will be deleted?:"))
@@ -42,12 +39,10 @@ while True:
 		else:
 			print("Deleted note",content[dlt-1])
 			content.pop(dlt-1)
-		continue
 	elif choice==5:
 		pickle.dump(content,fh)
 		fh.close()
 		print("Notebook shutting down, thank you.")
 		break
 	else:
-		print("Incorrect selection.")
-		continue		
+		print("Incorrect selection.")		

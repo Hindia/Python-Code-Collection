@@ -14,7 +14,6 @@ while True:
         content=handler.read()
         print(content)
         handler.close()
-        continue
     elif choice==2:
         handler=open(fname,"a")
         text=input("write a new note:")
@@ -22,12 +21,10 @@ while True:
         text=text+":::written on/at "+date+"\n"
         handler.write(text)
         handler.close()
-        continue
     elif choice==3:
         handler=open(fname,"w")
         handler.close()
         print("Notes deleted.")
-        continue
     elif choice==4:
         fname=input("Give the name of the new file:")
         try:
@@ -36,10 +33,8 @@ while True:
         except IOError:
             handler1=open(fname,"a")
             print("No notebook with that name detected, created one.")
-            continue		
     elif choice==5:
         print("Notebook shutting down, thank you.")
         break
     else:
         print("Incorrect selection")
-        continue
